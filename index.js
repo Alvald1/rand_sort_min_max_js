@@ -1,5 +1,5 @@
 function rand() {
-  return Math.floor(Math.random() * 10);
+  return Math.floor(Math.random() * 100);
 }
 function newArr(arr) {
   let tmp = [];
@@ -45,6 +45,10 @@ let min, max;
 findMinMax(arr);
 console.log(min, max);
 let tmp_arr = newArr(arr);
-console.log(arr.sort());
+console.log(
+  arr.sort(function (a, b) {
+    return a - b;
+  })
+);
 d_sort();
 console.log(tmp_arr);
