@@ -8,17 +8,17 @@ function newArr(arr) {
   }
   return tmp;
 }
-function d_sort() {
-  for (let i = 0; i < tmp_arr.length; ++i) {
+function d_sort(tmp) {
+  for (let i = 0; i < tmp.length; ++i) {
     let imax = i;
-    for (let j = i + 1; j < tmp_arr.length; ++j) {
-      if (tmp_arr[j] > tmp_arr[imax]) imax = j;
+    for (let j = i + 1; j < tmp.length; ++j) {
+      if (tmp[j] > tmp[imax]) imax = j;
     }
-    let tmp = tmp_arr[i];
-    tmp_arr[i] = tmp_arr[imax];
-    tmp_arr[imax] = tmp;
+    let tmp_n = tmp[i];
+    tmp[i] = tmp[imax];
+    tmp[imax] = tmp_n;
   }
-  return tmp_arr;
+  return tmp;
 }
 function findMinMax(arr) {
   (min = arr[0]), (max = arr[0]);
