@@ -1,5 +1,5 @@
 function rand() {
-  return Math.floor(Math.random() * 100);
+  return Math.floor(Math.random() * 100); //диапозон
 }
 function newArr(arr) {
   let tmp = [];
@@ -34,6 +34,7 @@ function chek(num) {
 }
 var arr = [];
 for (let i = 0; i < 10; ++i) {
+  //кол-во элементов в массиве
   let tmp = rand();
   while (chek(tmp) != true) {
     tmp = rand();
