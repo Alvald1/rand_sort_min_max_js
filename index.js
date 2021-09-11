@@ -18,6 +18,7 @@ function d_sort() {
     tmp_arr[i] = tmp_arr[imax];
     tmp_arr[imax] = tmp;
   }
+  return tmp_arr;
 }
 function findMinMax(arr) {
   (min = arr[0]), (max = arr[0]);
@@ -47,5 +48,4 @@ findMinMax(arr);
 console.log(min, max);
 let tmp_arr = newArr(arr);
 console.log(arr.sort((a, b) => a - b));
-d_sort();
-console.log(tmp_arr);
+console.log(d_sort(tmp_arr));
