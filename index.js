@@ -46,10 +46,6 @@ let min, max;
 findMinMax(arr);
 console.log(min, max);
 let tmp_arr = newArr(arr);
-console.log(
-  arr.sort(function (a, b) {
-    return a - b;
-  })
-);
+console.log(arr.sort((a, b) => a - b));
 d_sort();
 console.log(tmp_arr);
